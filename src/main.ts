@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+// platformBrowserDynamic: 코드를 컴파일을 브라우저에서 한다.
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

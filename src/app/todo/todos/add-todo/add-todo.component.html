@@ -1,0 +1,4 @@
+<!-- text.value가 newText의 속성에 바인딩됨 -->
+<!-- <input type="text" placeholder="할 일 추가" [(ngModel)]="newText"> --> <!-- {{ newText }} 바인딩 확인 방법 -->
+<input type="text" placeholder="할 일 추가" [ngModel]="newText" (ngModelChange)="changeNewTodo($event)"> <!-- {{ newText }} 바인딩 확인 방법 -->
+<button (click)="addTodo(newText)">Add</button>
